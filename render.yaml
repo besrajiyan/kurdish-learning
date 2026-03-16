@@ -29,3 +29,5 @@ services:
         value: sk_test_51TBfCxHW7iQY6Drzpw1oXMOtQ9VdbTrOLjMZBwsVTuYJiNPDYUzBAbyHSlCfMXswMhThworMXtweXyih5q74Ov8000FIUPFEPZ
       - key: STRIPE_WEBHOOK_SECRET
         value: ""
+      - key: PYTHON_VERSION
+        value: "3.11.11"
