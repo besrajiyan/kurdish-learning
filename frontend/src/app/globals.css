@@ -118,20 +118,37 @@
 }
 .sparkle { animation: sparkle 2s ease-in-out infinite; }
 
+/* ═══ Child mode refinements ═══ */
+body.child-mode {
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
 /* ═══ Adult mode refinements ═══ */
 body.adult-mode {
   font-size: 1rem;
   line-height: 1.5;
+  @apply bg-white;
 }
 
 body.adult-mode .card {
-  @apply rounded-2xl;
+  @apply rounded-2xl border border-surface-tertiary;
 }
 
-body.adult-mode .btn-primary,
-body.adult-mode .btn-secondary,
+body.adult-mode .btn-primary {
+  @apply rounded-xl bg-primary-800 hover:bg-primary-900;
+}
+
+body.adult-mode .btn-secondary {
+  @apply rounded-xl border-primary-800/20 text-primary-800;
+}
+
 body.adult-mode .btn-success,
 body.adult-mode .btn-accent {
+  @apply rounded-xl;
+}
+
+body.adult-mode .input {
   @apply rounded-xl;
 }
 
